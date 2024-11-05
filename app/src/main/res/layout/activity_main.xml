@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFF00">
+
+    <!-- Botón para mostrar un Toast en la parte superior, ocupando el 100% del ancho -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:text="Hello Toast"
+        android:textSize="36sp"
+        android:textColor="#ffffffff"
+        android:gravity="center"
+        android:background="#673AB7"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:text="Toast"
+        android:background="#4CAF50"
+        android:textColor="#FFFFFF" />
+
+    <!-- TextView para mostrar el contador, centrado en pantalla con layout_weight -->
+    <TextView
+        android:id="@+id/show_count"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="0"
+        android:textSize="96sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Botón de conteo en la parte inferior, ocupando el 100% del ancho -->
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:background="#4CAF50"
+        android:text="Count"
+        android:textColor="#FFFFFF" />
+</LinearLayout>
